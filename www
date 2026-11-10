@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kelle Energy Malaysia | Branch Office of Kelle Energy Singapore</title>
+<meta name="description" content="Kelle Energy Malaysia is the Malaysian branch of Kelle Energy (Singapore HQ), bringing portable, BESS-powered EV charging and backup power solutions to Malaysia.">
+
+<!-- TODO: replace www.kelle-energy.com.my with your real Malaysia domain -->
+<link rel="canonical" href="https://www.kelle-energy.com.my/">
+<link rel="alternate" hreflang="en-MY" href="https://www.kelle-energy.com.my/">
+<link rel="alternate" hreflang="en-SG" href="https://kelle-energy.com/">
+<link rel="alternate" hreflang="x-default" href="https://kelle-energy.com/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kelle Energy Malaysia",
+  "url": "https://www.kelle-energy.com.my/",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Kelle Energy",
+    "url": "https://kelle-energy.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "45 Ubi Cres",
+      "postalCode": "408590",
+      "addressCountry": "SG"
+    }
+  },
+  "email": "hello@kelle-energy.com",
+  "sameAs": [
+    "https://www.linkedin.com/company/kelle-energy/",
+    "http://www.instagram.com/kelle_energy/",
+    "http://www.facebook.com/kelle-energy"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#07201a;
+    --green:#0f9d6b;
+    --green-dark:#0a7a53;
+    --lime:#b7f34a;
+    --bg:#f4f8f6;
+    --text:#1c2b26;
+    --muted:#5f7069;
+    --white:#fff;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+  a{color:var(--green-dark);text-decoration:none}
+  .container{width:min(1100px,92%);margin:auto}
+
+  /* HQ bar */
+  .hq-bar{background:var(--ink);color:#b6c7c0;font-size:.85rem;padding:8px 0}
+  .hq-bar .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  .hq-bar a{color:var(--lime);font-weight:700}
+  .hq-bar a:hover{text-decoration:underline}
+
+  /* Header */
+  header{background:var(--white);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;position:relative}
+  .logo{font-weight:800;font-size:1.3rem;color:var(--ink);letter-spacing:-.02em}
+  .logo b{color:var(--green)}
+  .logo small{display:block;font-size:.65rem;font-weight:700;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+  nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+  nav a{color:var(--text);font-weight:600;font-size:.95rem}
+  nav a:hover{color:var(--green)}
+  .btn{display:inline-block;padding:12px 26px;border-radius:999px;font-weight:700;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:.2s}
+  .btn-primary{background:var(--green);color:#fff !important}
+  .btn-primary:hover{background:var(--green-dark)}
+  .btn-lime{background:var(--lime);color:var(--ink)}
+  .btn-lime:hover{background:#cbff6b}
+  .btn-outline{border-color:rgba(255,255,255,.6);color:#fff}
+  .btn-outline:hover{background:#fff;color:var(--ink)}
+  .menu-toggle{display:none;background:none;border:0;font-size:1.7rem;cursor:pointer;color:var(--ink)}
+
+  /* Hero */
+  .hero{background:radial-gradient(circle at 80% 20%,#14805c 0%,transparent 55%),linear-gradient(135deg,var(--ink),#0b3a2d);color:#fff;padding:96px 0}
+  .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:center}
+  .badge{display:inline-block;background:rgba(183,243,74,.15);color:var(--lime);padding:6px 14px;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.04em;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.1rem,4.8vw,3.4rem);line-height:1.1;margin-bottom:18px;letter-spacing:-.02em}
+  .hero h1 span{color:var(--lime)}
+  .hero p{color:#c4d8d0;font-size:1.1rem;margin-bottom:28px;max-width:540px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:30px;backdrop-filter:blur(6px)}
+  .hero-card h3{color:var(--lime);margin-bottom:6px}
+  .hero-card p{font-size:.95rem;margin-bottom:16px}
+  .hero-card a.news{display:block;background:rgba(255,255,255,.1);padding:14px 16px;border-radius:12px;color:#fff;font-weight:600;font-size:.95rem}
+  .hero-card a.news:hover{background:rgba(255,255,255,.18)}
+
+  /* Sections */
+  section{padding:76px 0}
+  .section-title{text-align:center;margin-bottom:44px}
+  .section-title h2{font-size:2rem;color:var(--ink);letter-spacing:-.01em}
+  .section-title p{color:var(--muted);max-width:640px;margin:10px auto 0}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .card{background:var(--white);border-radius:var(--radius);padding:30px;box-shadow:0 4px 18px rgba(7,32,26,.06);transition:.25s}
+  .card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(7,32,26,.12)}
+  .icon{font-size:2rem;margin-bottom:12px}
+  .card h3{margin-bottom:8px;color:var(--ink)}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  /* Mission */
+  .mission{background:var(--white)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+  .mission h2{font-size:2rem;color:var(--ink);margin-bottom:14px}
+  .mission p{margin-bottom:14px;color:var(--muted)}
+  .steps{list-style:none;counter-reset:s}
+  .steps li{counter-increment:s;background:var(--bg);border-radius:14px;padding:16px 18px 16px 62px;margin-bottom:12px;position:relative;font-size:.95rem}
+  .steps li::before{content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;display:grid;place-items:center}
+  .steps strong{display:block;color:var(--ink)}
+
+  /* News */
+  .news-list a.card{display:block;color:inherit}
+  .news-list h3{font-size:1.05rem}
+  .news-list .more{color:var(--green-dark);font-weight:700;font-size:.9rem;margin-top:10px;display:inline-block}
+
+  /* HQ banner */
+  .hq-banner{background:linear-gradient(135deg,var(--green),#0b6d4b);color:#fff;text-align:center;border-radius:var(--radius);padding:52px 24px}
+  .hq-banner h2{margin-bottom:10px}
+  .hq-banner p{max-width:640px;margin:0 auto 22px;color:#d9f5e8}
+  .hq-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+  .contact-info{background:var(--ink);color:#fff;border-radius:var(--radius);padding:36px}
+  .contact-info h3{color:var(--lime);margin-bottom:16px}
+  .contact-info p{margin-bottom:14px;color:#b6c7c0}
+  .contact-info a{color:var(--lime)}
+  form{background:var(--white);border-radius:var(--radius);padding:36px;box-shadow:0 4px 18px rgba(7,32,26,.06)}
+  label{font-weight:600;font-size:.9rem;display:block;margin-bottom:6px}
+  input,textarea,select{width:100%;padding:12px 14px;border:1px solid #cfdad5;border-radius:10px;margin-bottom:16px;font:inherit;background:#fff}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--green);border-color:transparent}
+
+  /* Footer */
+  footer{background:var(--ink);color:#8fa59c;padding:50px 0 22px}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px;margin-bottom:30px}
+  footer h4{color:#fff;margin-bottom:12px}
+  footer ul{list-style:none}
+  footer li{margin-bottom:8px}
+  footer a{color:#c4d8d0}
+  footer a:hover{color:var(--lime)}
+  .copy{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  @media(max-width:860px){
+    .hero-grid,.two,.contact-grid,.footer-grid{grid-template-columns:1fr}
+    .menu-toggle{display:block}
+    nav ul{display:none;position:absolute;top:100%;left:-4%;right:-4%;background:#fff;flex-direction:column;padding:20px;gap:16px;box-shadow:0 10px 16px rgba(0,0,0,.08)}
+    nav ul.open{display:flex}
+    .hero{padding:64px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- HQ backlink bar -->
+<div class="hq-bar">
+  <div class="container">
+    <span>🇲🇾 Kelle Energy Malaysia &mdash; Branch Office</span>
+    <a href="https://kelle-energy.com/" rel="noopener" title="Kelle Energy Singapore HQ">← Visit Singapore HQ main website (kelle-energy.com)</a>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">Kelle<b>Energy</b><small>Malaysia Branch</small></a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <nav>
+      <ul id="menu" onclick="this.classList.remove('open')">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#hq">Group HQ</a></li>
+        <li><a href="#contact" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">OFFICIAL BRANCH OF KELLE ENERGY SINGAPORE</span>
+        <h1>Redefining the energy landscape in <span>Malaysia</span>.</h1>
+        <p>We make renewable power universally accessible with innovative, portable energy storage and delivery, starting with mobile EV charging powered by BESS technology.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-lime">Talk to Our Team</a>
+          <a href="https://kelle-energy.com/" class="btn btn-outline" rel="noopener">Explore HQ Website</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h3>Now in Malaysia</h3>
+        <p>Mobile EV charging has arrived. See how our BESS-powered solution is taking off locally.</p>
+        <a class="news" href="https://kelle-energy.com/mobile-ev-charging-takes-off-in-malaysia-with-kelle-energys-bess-powered-solution/" rel="noopener">Mobile EV Charging Takes Off in Malaysia →</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Solutions for Malaysia</h2>
+        <p>Portable, flexible energy built on the Kelle Energy group technology platform.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="icon">🔌</div><h3>Portable EV Charging</h3><p>Fast, convenient charging delivered to where EVs are, with no fixed infrastructure needed.</p></div>
+        <div class="card"><div class="icon">🎪</div><h3>Event Power Rental</h3><p>Eco-friendly, quiet power options for events, as an alternative to noisy generators.</p></div>
+        <div class="card"><div class="icon">🔋</div><h3>BESS &amp; Backup Power</h3><p>Flexible battery energy storage and backup power for businesses seeking energy security.</p></div>
+        <div class="card"><div class="icon">☀️</div><h3>Solar Integration</h3><p>Pairing portable storage with solar for a path toward 100% green energy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / MISSION -->
+  <section class="mission" id="about">
+    <div class="container two">
+      <div>
+        <h2>Our Mission</h2>
+        <p>To revolutionize the energy landscape by harnessing cutting-edge technology to accelerate the transition to sustainable energy, and to redefine energy storage and delivery with innovative, portable solutions.</p>
+        <p>Kelle Energy Malaysia works hand-in-hand with our Singapore headquarters. For group-wide information, visit <a href="https://kelle-energy.com/about-us/" rel="noopener"><strong>About Kelle Energy</strong></a> and <a href="https://kelle-energy.com/why-us/" rel="noopener"><strong>Why Us</strong></a> on the main website.</p>
+      </div>
+      <ol class="steps">
+        <li><strong>Introduce</strong>Portable EV charging to early adopters.</li>
+        <li><strong>Rent</strong>Eco-friendly power for events.</li>
+        <li><strong>Scale</strong>BESS and backup power markets.</li>
+        <li><strong>Expand</strong>To underserved regions with local partners.</li>
+        <li><strong>Integrate</strong>Solar for fully green energy.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <div class="container">
+      <div class="section-title">
+        <h2>Latest from Kelle Energy</h2>
+        <p>Insights and updates published on our group website.</p>
+      </div>
+      <div class="cards news-list">
+        <a class="card" href="https://kelle-energy.com/what-the-future-looks-like-for-electric-vehicles-in-malaysia/" rel="noopener"><h3>What the future looks like for electric vehicles in Malaysia</h3><span class="more">Read on HQ site →</span></a>
+        <a class="card" href="https://kelle-energy.com/why-mobile-chargers-will-drive-the-next-phase-of-ev-growth/" rel="noopener"><h3>Why mobile chargers will drive the next phase of EV growth</h3><span class="more">Read on HQ site →</span></a>
+        <a class="card" href="https://kelle-energy.com/how-electrification-can-improve-energy-security-for-businesses/" rel="noopener"><h3>How electrification can improve energy security for businesses</h3><span class="more">Read on HQ site →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HQ BACKLINK -->
+  <section id="hq" style="padding-top:0">
+    <div class="container">
+      <div class="hq-banner">
+        <h2>Part of the Kelle Energy Group</h2>
+        <p>Our headquarters in Singapore leads innovation, strategy and the global roadmap. Visit the main website for the full company story and latest news.</p>
+        <div class="hq-links">
+          <a href="https://kelle-energy.com/" class="btn btn-lime" rel="noopener">Go to kelle-energy.com →</a>
+          <a href="https://kelle-energy.com/news/" class="btn btn-outline" rel="noopener">HQ News</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact the Malaysia Office</h2>
+        <p>Tell us what you need and our team will get back to you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Kelle Energy Malaysia</h3>
+          <p>📍 [Your Malaysia office address]<br>[City, Postcode], Malaysia</p>
+          <p>📞 [+60 x-xxxx xxxx]</p>
+          <p>✉️ <a href="mailto:hello@kelle-energy.com">hello@kelle-energy.com</a></p>
+          <p>🏢 Headquarters:<br>45 Ubi Cres, Singapore 408590<br><a href="https://kelle-energy.com/get-in-touch/" rel="noopener">HQ contact page →</a></p>
+        </div>
+        <form onsubmit="event.preventDefault();alert('Thank you! Your message has been received.');this.reset();">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@company.com" required>
+          <label for="topic">I'm interested in</label>
+          <select id="topic">
+            <option>Portable EV Charging</option>
+            <option>Event Power Rental</option>
+            <option>BESS &amp; Backup Power</option>
+            <option>Partnership</option>
+            <option>Other</option>
+          </select>
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="4" placeholder="How can we help?" required></textarea>
+          <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Kelle Energy Malaysia</h4>
+        <p>The Malaysian branch of Kelle Energy, redefining energy storage and delivery with portable, sustainable solutions.</p>
+      </div>
+      <div>
+        <h4>This Site</h4>
+        <ul>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kelle Energy Group</h4>
+        <ul>
+          <li><a href="https://kelle-energy.com/" rel="noopener">Singapore HQ Website</a></li>
+          <li><a href="https://www.linkedin.com/company/kelle-energy/" rel="noopener">LinkedIn</a></li>
+          <li><a href="http://www.instagram.com/kelle_energy/" rel="noopener">Instagram</a></li>
+          <li><a href="http://www.facebook.com/kelle-energy" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 Kelle Energy Malaysia. All rights reserved.</span>
+      <span>A branch of <a href="https://kelle-energy.com/" rel="noopener">Kelle Energy, Singapore</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
